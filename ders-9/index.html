@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        (function adCagirma(ad,soyad){
+            // daxili hisse
+            let mesaj = ad + " " + soyad + " xos gelmisiz."; // Kenan Mehtizade xos gelmisiz
+            return mesaj;
+        })();
+
+        //anonim funksiya
+        const adCagirma2 = function(ad,soyad){return ad + " " + soyad + " xos gelmisiz."};
+        console.log(adCagirma2("Inci","Huseynli"));
+
+        //oxlu funksiya(anonimin qisa versiyasi)
+        const adCagirma3 = (ad,soyad) => {return ad + " " + soyad + " xos gelmisiz."};
+        console.log(adCagirma3("Ramal","Mureslov"));
+
+
+        // xarici hisse(esas hisse)
+        let ad = prompt("Adinizi daxil edin:");
+        let soyad = prompt("Soyadinizi daxil edin:");
+
+        let tamAd = adCagirma(ad,soyad);
+        alert(tamAd);
+      
+
+    </script>
+</body>
+</html>

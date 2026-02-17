@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1-->10
+        // 1*2*3*4*5*6*7*8*9*10 = ?
+
+        let hasil = 1;
+
+        for(let i = 1; i < 10; i++){
+            hasil = hasil * i;
+        }
+    
+        console.log(hasil);
+
+        ////////////////////////////////////////////////
+
+        /*
+        let name = "Salam. Hesen";
+        for(let i = 0; i<name.length; i++){
+
+            console.log(name[i]); // imtahani yaz
+
+            if(name[i] === "."){// ustunde telefon var ya yox......
+                alert("Cantanda telefon var");
+                break;  // imtahan girme
+            }
+        }
+        */
+
+        let name2 = "Salam. Shagird";
+        for(let i = 0; i<name2.length; i++){
+
+            if(name2[i] === "."){
+                alert("Bu defeden hecne olmaz");
+                continue;
+            }
+
+            console.log(name2[i]);
+        }
+    </script>
+</body>
+</html>

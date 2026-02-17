@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1-ci funksiya
+        let eded1 = -45;
+        let eded1Abs = Math.abs(eded1);// 45  -->  eded1Abs = 45
+        alert("Modul qiymeti: " + eded1Abs);
+
+        // 2-ci funksiya
+        let a = 9;
+        let b = 5;
+        let quvvet = Math.pow(a,b); // a(9) ustunde b(5)  --> 59049
+        alert("Quvvet qiymeti: " + quvvet);
+
+        // 3-cu funksiya
+        let kok = 25;
+        let kokAlti = Math.sqrt(kok); // 25-i kok altina sal --> 5
+        alert("Kokalti qiymeti: " + kokAlti);
+
+        // 4-cu funksiya
+        let yuvarlaq1 = 5.2;
+        let boyukEt = Math.ceil(yuvarlaq1); // 5.2 yuvarlaq olacaq 6 --> 6
+        alert("Yuvarlaq Boyuk Eded: " + boyukEt);
+
+        // 5-ci funksiya
+        let yuvarlaq2 = 7.9;
+        let kicikEt = Math.floor(yuvarlaq2); // 7.9 yuvarlaq olacaq 7 --> 7
+        alert("Yuvarlaq Kicik Eded: " + kicikEt);
+
+        // 6-ci funksiya
+        let yuvarlaq3 = 3.6;
+        let yuvarlaqEt = Math.round(yuvarlaq3); // 3.6 yuvarlaq olacaq 4 --> 4
+        alert("Yuvarlaq Eded: " + yuvarlaqEt);
+
+        // 7-ci funksiya
+        let enKicikEded = Math.min(-100, -50, -75, 10, 15, 70);
+        alert("En Kicik Eded: " + enKicikEded);
+
+        // 8-ci funksiya
+        let enBoyukEded = Math.max(100.5, 20, -23, -50, 100.51);
+        alert("En Boyuk Eded: " + enBoyukEded);
+
+        // 9-cu funksiya
+        let radius = 20;
+        let daireSahesi = Math.round(Math.PI * radius ** 2);
+        alert("Dairenin Sahesi: " + daireSahesi);
+    </script>
+</body>
+</html>

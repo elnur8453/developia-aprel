@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="soz-sayi"></p>
+    <script>
+        const name = "Eli";
+        console.log(name.length);
+
+        console.log(name[2]);
+        console.log(name.indexOf("a"));
+
+        var metn = "hsdvuavhdbciWBFUYAB";
+        var uzunluq = metn.length;
+        console.log(uzunluq);
+
+        
+
+        if(uzunluq > 20){
+            document.getElementById("soz-sayi").innerHTML = uzunluq;
+        }
+        else{
+            document.getElementById("soz-sayi").innerHTML = "Simvol sayi azdir....";
+        }
+
+        let age = prompt("Oz yasini daxil et: ");
+        alert(age);
+    </script>
+</body>
+</html>

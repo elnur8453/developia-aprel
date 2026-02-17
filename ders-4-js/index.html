@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="index"></p>
+    <p id="l-index"></p>
+    <p id="slice"></p>
+    <script>
+        let name1 = "Kenan"; //0,1,2,3......
+        console.log(name1.length);
+        console.log(name1[2]);
+        console.log(name1.indexOf("K"));
+
+        let fullName = "Kenan Mehtizadeh";
+        let lengthOfName = fullName.length;
+        document.getElementById("name").innerHTML = lengthOfName;
+
+        let indexOfName = fullName.indexOf("nan");
+        document.getElementById("index").innerHTML = indexOfName;
+
+        let lIndexOfName = fullName.lastIndexOf("Meh");
+        document.getElementById("l-index").innerHTML = lIndexOfName;
+
+        let sliceOfName = fullName.slice(6, 10);
+        document.getElementById("slice").innerHTML = sliceOfName;
+
+        let trimWord = "Salam";
+        alert(trimWord.trim());
+
+        console.log(trimWord.charAt(0));
+
+        let nameOfStudent = prompt("Adinizi daxil edin");
+        alert(nameOfStudent);
+
+        let changeToNumber = Number('123');
+
+        console.log(changeToNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // daire sahesi tapan dustur
+
+        function toplama(){
+            let a = 5;
+            let b = 8;
+            let cem = a + b;
+            alert(cem);
+        }
+
+
+        
+        daire_sahesi();
+
+        function daire_sahesi(){
+            let radius = +prompt("Dairenin radisusunu daxil edin");
+            const pi = 3.14;
+            let sahe = pi*radius**2;
+            alert(sahe);
+        }
+
+
+        
+        //a*b--> sahe dusturu 
+
+        let a = +prompt("a terefini daxil edin:"); //7
+        let b = +prompt("b terefini daxil edin:"); //5
+
+        duzbucaqli_sahesi(a, b);
+
+        function duzbucaqli_sahesi(a, b){
+            let sahe = a * b; // 7*5 = 35-->sahe
+            alert("duzbucaqlinin sahesi: " + sahe);
+        }
+
+
+
+    </script>
+</body>
+</html>
